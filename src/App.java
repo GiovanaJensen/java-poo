@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] arg){
-        Conta primeiraConta = new Conta();
+        Conta primeiraConta = new Conta(100,200);
         primeiraConta.depositar(200);
         System.out.println(primeiraConta.getSaldo());
         primeiraConta.depositar(primeiraConta.getSaldo() + 100);
@@ -17,5 +17,12 @@ public class App {
         primeiraConta.setTitular(giovana);
         System.out.println(primeiraConta.getTitular().getNome());
         System.out.println(giovana);
+        System.out.println(primeiraConta.getAgencia() + " " + primeiraConta.getNumero());
+
+        // segunda Conta
+        Conta segundaConta = new Conta(100,201);
+
+        //total
+        System.out.println(Conta.getTotal());
     }
 }
