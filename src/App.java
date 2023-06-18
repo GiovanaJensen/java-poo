@@ -13,9 +13,9 @@ public class App {
         //cliente ligando a conta
 
         Cliente giovana = new Cliente();
-        giovana.nome = "Giovana";
-        primeiraConta.titular = giovana;
-        System.out.println(primeiraConta.titular);
+        giovana.setNome("Giovana");
+        primeiraConta.setTitular(giovana);
+        System.out.println(primeiraConta.getTitular().getNome());
         System.out.println(giovana);
     }
 }
