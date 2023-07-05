@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] arg){
+    public static void main(String[] arg) throws SaldoInsuficienteException{
         Conta primeiraConta = new ContaCorrente(100,200);
         primeiraConta.depositar(200);
         System.out.println(primeiraConta.getSaldo());
