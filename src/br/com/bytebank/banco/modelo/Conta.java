@@ -1,10 +1,22 @@
 package br.com.bytebank.banco.modelo;
+/*
+ * Classe representa a moldura de uma classe 
+ * @author Giovana Fernandes
+ * @version 0.1
+ */
+
 public abstract class Conta {
     protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
     private static int total;
+
+    /*
+     * Construtor para inicializar o objeto Conta a partir da agencia e do numero
+     * @param agencia
+     * @param numero
+     */
 
     public Conta(int agencia, int numero){
         Conta.total++;
