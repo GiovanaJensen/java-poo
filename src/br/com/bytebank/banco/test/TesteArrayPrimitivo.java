@@ -1,4 +1,4 @@
-package br.com.bytebank.banco.testes;
+package br.com.bytebank.banco.test;
 
 public class TesteArrayPrimitivo {
     public static void main(String[] args){
