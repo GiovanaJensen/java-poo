@@ -5,7 +5,7 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.Conta;
 
-public class Teste {
+public class TesteArrayList {
     public static void main(String[] args){
 
         //Generics
