@@ -39,12 +39,12 @@ public class TesteContasComparator {
         //classe anonima
         lista.sort(new Comparator<Conta>() { 
 
-            @Override
-            public int compare(Conta c1, Conta c2) {
-                return c1.getNumero() - c2.getNumero();
-            }
-        }    
-    );
+                @Override
+                public int compare(Conta c1, Conta c2) {
+                    return c1.getNumero() - c2.getNumero();
+                }
+            }    
+        );
 
         for (Conta conta : lista) {
             System.out.println(conta);
