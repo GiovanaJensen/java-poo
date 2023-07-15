@@ -45,7 +45,15 @@ public class TesteClientesComparator {
             System.out.println(conta.getTitular().getNome());
         }
 
-        TitularDaContaComparator comparator = new TitularDaContaComparator();
+        //classe anonima
+        Comparator<Conta> comparator = new Comparator<Conta>() {
+            @Override
+            public int compare(Conta conta1, Conta conta2){
+                String nomeCliente1 = conta1.getTitular().getNome();
+                String nomeCliente2 = conta2.getTitular().getNome();
+                return nomeCliente1.compareTo(nomeCliente2);
+            }
+        };
 
         System.out.println("---------");
 
@@ -54,14 +62,5 @@ public class TesteClientesComparator {
         for (Conta conta : lista) {
             System.out.println(conta.getTitular().getNome());
         }
-    }
-}
-
-class TitularDaContaComparator implements Comparator<Conta>{
-    @Override
-    public int compare(Conta conta1, Conta conta2){
-        String nomeCliente1 = conta1.getTitular().getNome();
-        String nomeCliente2 = conta2.getTitular().getNome();
-        return nomeCliente1.compareTo(nomeCliente2);
     }
 }
